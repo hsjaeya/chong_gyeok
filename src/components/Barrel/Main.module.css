@@ -3,6 +3,8 @@
   height: 40px;
   background-color: aqua;
   position: absolute;
-  top: 215px;
-  left: 410px;
+  top: 50%; /* 부모 높이 기준 */
+  left: 50%; /* 부모 너비 기준 */
+  margin-top: -210px;
+  margin-left: -360px;
 }

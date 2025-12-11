@@ -1,11 +1,5 @@
 .rootContainer {
-  position: relative;
-  animation-name: jaehee;
-  animation-duration: 0.1s;
-  animation-timing-function: linear;
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+  display: inline-block;
 }
 
 @keyframes jaehee {
@@ -15,6 +9,15 @@
   100% {
     transform: translateX(50px);
   }
+}
+
+.animate {
+  animation-name: jaehee;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 .container {
   position: relative;

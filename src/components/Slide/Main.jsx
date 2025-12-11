@@ -1,10 +1,26 @@
+import { useEffect, useRef } from "react";
 import styles from "./Main.module.css";
 import FrontSight from "./FrontSight";
 import RearSight from "./RearSight";
 
 const Slide = () => {
+  const rootRef = useRef(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key.toLowerCase() === "r" && rootRef.current) {
+        rootRef.current.classList.remove(styles.animate);
+        void rootRef.current.offsetWidth;
+        rootRef.current.classList.add(styles.animate);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
-    <div className={styles.rootContainer}>
+    <div ref={rootRef} className={styles.rootContainer}>
       <div className={styles.sight}>
         <FrontSight />
         <RearSight />
@@ -17,13 +33,9 @@ const Slide = () => {
         <div className={styles.country}>AUSTRIA</div>
         <div className={styles.number2}>9x19</div>
         <div className={styles.rearSerrationsContainer}>
-          <div className={styles.rearSerrations} />
-          <div className={styles.rearSerrations} />
-          <div className={styles.rearSerrations} />
-          <div className={styles.rearSerrations} />
-          <div className={styles.rearSerrations} />
-          <div className={styles.rearSerrations} />
-          <div className={styles.rearSerrations} />
+          {[...Array(7)].map((_, i) => (
+            <div key={i} className={styles.rearSerrations} />
+          ))}
         </div>
       </div>
     </div>

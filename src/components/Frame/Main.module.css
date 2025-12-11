@@ -43,7 +43,45 @@
   border-top-right-radius: 30px;
 
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+
+  position: relative;
+  overflow: hidden;
 }
+
+.trigger {
+  transform-origin: top left;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 55px;
+  margin-top: -98px;
+  margin-left: 112px;
+  background: #443c3c;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 25px;
+  clip-path: polygon(30% 0%, 100% 6%, 70% 40%, 0% 100%);
+}
+
+@keyframes jaehee {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.animate {
+  animation-name: jaehee;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
 .handleTop {
   width: 160px;
   height: 100px;
@@ -65,13 +103,13 @@
   clip-path: polygon(0% 0%, 83% 0%, 100% 100%, 17% 100%);
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 65px;
-  position: relative;
 }
 
 .handleScratchTop {
   width: 162px;
   height: 170px;
-  margin-left: 521.7px;
+  margin-top: -70px;
+  margin-left: 178px;
   background: #443c3c;
   display: flex;
   align-items: center;
@@ -80,8 +118,8 @@
   border-bottom-right-radius: 65px;
 
   position: absolute;
-  top: 370px;
-  left: 433.5px;
+  top: 50%;
+  left: 50%;
   border-top-right-radius: 100px;
   border-top-left-radius: 10px;
 }
@@ -89,7 +127,8 @@
 .handleScratchBottom {
   width: 162px;
   height: 170px;
-  margin-left: 521.7px;
+  margin-top: 85px;
+  margin-left: 270px;
   background: #443c3c;
 
   display: flex;
@@ -99,6 +138,7 @@
   border-bottom-right-radius: 65px;
 
   position: absolute;
-  top: 410px;
-  left: 440px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
