@@ -1,0 +1,56 @@
+.framTop1 {
+  width: 700px;
+  height: 20px;
+  background: aqua;
+}
+.framTop2 {
+  width: 700px;
+  height: 10px;
+  background: aqua;
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 1% 100%);
+}
+.holeFrame {
+  width: 160px;
+  height: 100px;
+  margin-left: 361px;
+  background: aqua;
+  display: flex;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
+.hole {
+  background-color: #242424;
+  width: 120px;
+  height: 70px;
+  margin-inline: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+}
+.handleTop {
+  width: 160px;
+  height: 100px;
+  background-color: aqua;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+.frameBottom {
+  display: flex;
+  flex-direction: row;
+}
+.handleBottomUnder {
+  width: 192px;
+  height: 200px;
+  margin-left: 521.7px;
+  background: aqua;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0% 0%, 83% 0%, 100% 100%, 17% 100%);
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 65px;
+  position: relative;
+}
