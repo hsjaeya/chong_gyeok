@@ -1,14 +1,27 @@
-.framTop1 {
+.frameTop1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: -4px;
+}
+.frameTop1_1 {
+  width: 4px;
+  height: 20px;
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+  background: aqua;
+}
+.frameTop1_2 {
   width: 700px;
   height: 20px;
   background: aqua;
 }
-.framTop2 {
+
+.frameTop2 {
   width: 700px;
   height: 10px;
   background: aqua;
   clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 1% 100%);
 }
+
 .holeFrame {
   width: 160px;
   height: 100px;
@@ -17,7 +30,6 @@
   display: flex;
   align-items: center;
   border-bottom-left-radius: 30px;
-
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
 }
 .hole {
@@ -43,6 +55,7 @@
   flex-direction: row;
 }
 .handleBottomUnder {
+  position: relative;
   width: 192px;
   height: 200px;
   margin-left: 521.7px;
@@ -53,4 +66,39 @@
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 65px;
   position: relative;
+}
+
+.handleScratchTop {
+  width: 162px;
+  height: 170px;
+  margin-left: 521.7px;
+  background: #443c3c;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0% 0%, 83% 0%, 100% 100%, 17% 100%);
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 65px;
+
+  position: absolute;
+  top: 370px;
+  left: 433.5px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 10px;
+}
+
+.handleScratchBottom {
+  width: 162px;
+  height: 170px;
+  margin-left: 521.7px;
+  background: #443c3c;
+
+  display: flex;
+  align-items: center;
+  clip-path: polygon(0% 0%, 83% 0%, 100% 100%, 17% 100%);
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 65px;
+
+  position: absolute;
+  top: 410px;
+  left: 440px;
 }

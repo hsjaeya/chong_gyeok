@@ -1,11 +1,10 @@
 import styles from "./Main.module.css";
-import logo from "../../assets/glock_logo.png";
 import FrontSight from "./FrontSight";
 import RearSight from "./RearSight";
 
 const Slide = () => {
   return (
-    <>
+    <div className={styles.rootContainer}>
       <div className={styles.sight}>
         <FrontSight />
         <RearSight />
@@ -27,7 +26,7 @@ const Slide = () => {
           <div className={styles.rearSerrations} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

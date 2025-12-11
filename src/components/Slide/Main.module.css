@@ -1,4 +1,23 @@
+.rootContainer {
+  position: relative;
+  animation-name: jaehee;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes jaehee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
 .container {
+  position: relative;
   width: 700px;
   height: 80px;
   border: 1px solid aqua;
@@ -8,7 +27,9 @@
   border-bottom-right-radius: 2px;
   display: flex;
   flex-direction: row;
+  background-color: #242424;
 }
+
 .logoContainer {
   border: 1px solid aqua;
   border-radius: 3px;
