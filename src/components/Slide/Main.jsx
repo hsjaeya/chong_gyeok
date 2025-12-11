@@ -1,0 +1,34 @@
+import styles from "./Main.module.css";
+import logo from "../../assets/glock_logo.png";
+import FrontSight from "./FrontSight";
+import RearSight from "./RearSight";
+
+const Slide = () => {
+  return (
+    <>
+      <div className={styles.sight}>
+        <FrontSight />
+        <RearSight />
+      </div>
+      <div className={styles.container}>
+        <div className={styles.logoContainer}>
+          <img src={logo} alt="Description" className={styles.logo} />
+        </div>
+        <div className={styles.number1}>17</div>
+        <div className={styles.country}>AUSTRIA</div>
+        <div className={styles.number2}>9x19</div>
+        <div className={styles.rearSerrationsContainer}>
+          <div className={styles.rearSerrations} />
+          <div className={styles.rearSerrations} />
+          <div className={styles.rearSerrations} />
+          <div className={styles.rearSerrations} />
+          <div className={styles.rearSerrations} />
+          <div className={styles.rearSerrations} />
+          <div className={styles.rearSerrations} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Slide;

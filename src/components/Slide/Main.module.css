@@ -1,0 +1,71 @@
+.container {
+  width: 700px;
+  height: 80px;
+  border: 1px solid aqua;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  width: 40px;
+  height: 30px;
+}
+.sight {
+  padding-right: 15px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logoContainer {
+  flex: 1;
+  justify-content: end;
+  display: flex;
+  align-items: center;
+}
+.number1 {
+  flex: 0.4;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: small;
+  color: aqua;
+}
+.country {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: small;
+  color: aqua;
+}
+.number2 {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: small;
+  color: aqua;
+}
+
+.rearSerrationsContainer {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+  width: 300px;
+  padding-right: 18px;
+}
+.rearSerrations {
+  height: 75px;
+  width: 10px;
+  display: flex;
+  justify-content: end;
+  background-color: aqua;
+  margin-inline: 6px;
+}
