@@ -11,8 +11,8 @@ const Slide = () => {
         <RearSight />
       </div>
       <div className={styles.container}>
-        <div className={styles.logoContainer}>
-          <img src={logo} alt="Description" className={styles.logo} />
+        <div className={styles.logo}>
+          <div className={styles.logoContainer}>콜록</div>
         </div>
         <div className={styles.number1}>17</div>
         <div className={styles.country}>AUSTRIA</div>

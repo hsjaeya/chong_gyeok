@@ -9,9 +9,10 @@
   display: flex;
   flex-direction: row;
 }
-.logo {
-  width: 40px;
-  height: 30px;
+.logoContainer {
+  border: 1px solid aqua;
+  border-radius: 3px;
+  padding: 5px;
 }
 .sight {
   padding-right: 15px;
@@ -20,11 +21,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.logoContainer {
-  flex: 1;
+.logo {
+  flex: 0.8;
   justify-content: end;
   display: flex;
   align-items: center;
+  color: aqua;
 }
 .number1 {
   flex: 0.4;
