@@ -10,14 +10,17 @@
   background: aqua;
 }
 .frameTop1_2 {
-  width: 700px;
+  width: 712px;
+  margin-right: -20px;
   height: 20px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 5px;
   background: aqua;
 }
 
 .frameTop2 {
-  width: 700px;
-  height: 10px;
+  width: 698px;
+  height: 11px;
   margin-top: -1px;
   background: aqua;
   clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 1% 100%);
@@ -39,7 +42,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -109.1px;
+  margin-top: -108px;
   margin-left: 110px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 46%);
   background-color: aqua;

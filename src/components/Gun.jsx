@@ -2,6 +2,7 @@ import Slide from "./Slide/Main";
 import Frame from "./Frame/Main";
 import styles from "./Gun.module.css";
 import Barrel from "./Barrel/Main";
+import { useRef, useEffect } from "react";
 
 const Gun = () => {
   window.addEventListener("resize", () => {
@@ -16,8 +17,24 @@ const Gun = () => {
       document.body.style.visibility = "visible";
     }
   });
+
+  const rootRef = useRef(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key.toLowerCase() === "r" && rootRef.current) {
+        rootRef.current.classList.remove(styles.animate);
+        void rootRef.current.offsetWidth;
+        rootRef.current.classList.add(styles.animate);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
-    <div className={styles.container}>
+    <div ref={rootRef} className={styles.container}>
       <Barrel />
       <Slide />
       <Frame />
