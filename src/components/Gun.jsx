@@ -2,6 +2,7 @@ import Slide from "./Slide/Main";
 import Frame from "./Frame/Main";
 import styles from "./Gun.module.css";
 import Barrel from "./Barrel/Main";
+import ShootSound from "../assets/audios/shoot_sound.mp3";
 import { useRef, useEffect } from "react";
 
 const Gun = () => {
@@ -19,10 +20,14 @@ const Gun = () => {
   });
 
   const rootRef = useRef(null);
+  const audio = new Audio(ShootSound);
 
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key.toLowerCase() === "r" && rootRef.current) {
+        audio.pause();
+        audio.currentTime = 0;
+        audio.play();
         rootRef.current.classList.remove(styles.animate);
         void rootRef.current.offsetWidth;
         rootRef.current.classList.add(styles.animate);
