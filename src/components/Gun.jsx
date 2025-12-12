@@ -6,10 +6,14 @@ import Barrel from "./Barrel/Main";
 const Gun = () => {
   window.addEventListener("resize", () => {
     const minWidth = 800;
-    const minHeight = 700;
+    const minHeight = 600;
 
     if (window.innerWidth < minWidth || window.innerHeight < minHeight) {
-      alert("창 크기를 키워주세요 (최소크기: width: 800, height: 700)");
+      // alert("창 크기를 키워주세요 (최소크기: width: 800, height: 700)");
+      document.body.style.visibility = "hidden";
+    } else {
+      // document.body.style.display = "block";
+      document.body.style.visibility = "visible";
     }
   });
   return (

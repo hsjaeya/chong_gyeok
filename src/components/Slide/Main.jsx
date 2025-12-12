@@ -9,12 +9,13 @@ const Slide = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key.toLowerCase() === "r" && rootRef.current) {
-        rootRef.current.classList.remove(styles.animate);
-        void rootRef.current.offsetWidth;
-        rootRef.current.classList.add(styles.animate);
+        setTimeout(function () {
+          rootRef.current.classList.remove(styles.animate);
+          void rootRef.current.offsetWidth;
+          rootRef.current.classList.add(styles.animate);
+        }, 70);
       }
     };
-
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);

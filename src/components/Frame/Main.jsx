@@ -5,7 +5,7 @@ const Frame = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key.toLowerCase() === "t" && rootRef.current) {
+      if (e.key.toLowerCase() === "r" && rootRef.current) {
         rootRef.current.classList.remove(styles.animate);
         void rootRef.current.offsetWidth;
         rootRef.current.classList.add(styles.animate);
@@ -21,14 +21,14 @@ const Frame = () => {
         <div className={styles.frameTop1_1}></div>
         <div className={styles.frameTop1_2}></div>
       </div>
-
       <div className={styles.frameTop2}></div>
-
       <div className={styles.frameBottom}>
         <div className={styles.holeFrame}>
           <div className={styles.hole}></div>
           <div ref={rootRef} className={styles.trigger}></div>
+          <div className={styles.holeFrameSupport}></div>
         </div>
+
         <div className={styles.handleTop}></div>
       </div>
       <div className={styles.handleBottomUnder}></div>

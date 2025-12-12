@@ -32,6 +32,17 @@
   border-bottom-left-radius: 30px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
 }
+.holeFrameSupport {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -109px;
+  margin-left: 110px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 52%);
+  background-color: aqua;
+  width: 100px;
+  height: 20px;
+}
 .hole {
   background-color: #242424;
   width: 120px;
@@ -41,9 +52,7 @@
   border-bottom-right-radius: 10px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
-
   position: relative;
   overflow: hidden;
 }
@@ -51,7 +60,7 @@
 .trigger {
   transform-origin: top left;
   position: absolute;
-  z-index: 1;
+
   top: 50%;
   left: 50%;
   width: 30px;
@@ -61,7 +70,7 @@
   background: #443c3c;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 25px;
-  clip-path: polygon(30% 0%, 100% 6%, 70% 40%, 0% 100%);
+  clip-path: polygon(30% 0%, 100% 0%, 75% 40%, 0% 100%);
 }
 
 @keyframes jaehee {
