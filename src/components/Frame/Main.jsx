@@ -5,7 +5,7 @@ const Frame = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key.toLowerCase() === "r" && rootRef.current) {
+      if (e.key.toLowerCase() === "s" && rootRef.current) {
         rootRef.current.classList.remove(styles.animate);
         void rootRef.current.offsetWidth;
         rootRef.current.classList.add(styles.animate);

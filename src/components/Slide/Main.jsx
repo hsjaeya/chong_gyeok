@@ -8,7 +8,7 @@ const Slide = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key.toLowerCase() === "r" && rootRef.current) {
+      if (e.key.toLowerCase() === "s" && rootRef.current) {
         setTimeout(function () {
           rootRef.current.classList.remove(styles.animate);
           void rootRef.current.offsetWidth;

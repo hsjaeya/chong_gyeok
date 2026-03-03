@@ -1,4 +1,4 @@
-import Gun from "../components/gun";
+import Gun from "../components/Gun";
 
 const Home = () => {
   return (

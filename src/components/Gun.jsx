@@ -24,7 +24,7 @@ const Gun = () => {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key.toLowerCase() === "r" && rootRef.current) {
+      if (e.key.toLowerCase() === "s" && rootRef.current) {
         audio.pause();
         audio.currentTime = 0;
         audio.play();
