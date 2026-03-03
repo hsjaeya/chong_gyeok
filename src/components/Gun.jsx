@@ -25,12 +25,14 @@ const Gun = () => {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key.toLowerCase() === "s" && rootRef.current) {
-        audio.pause();
-        audio.currentTime = 0;
-        audio.play();
-        rootRef.current.classList.remove(styles.animate);
-        void rootRef.current.offsetWidth;
-        rootRef.current.classList.add(styles.animate);
+        setTimeout(function () {
+          audio.pause();
+          audio.currentTime = 0;
+          audio.play();
+          rootRef.current.classList.remove(styles.animate);
+          void rootRef.current.offsetWidth;
+          rootRef.current.classList.add(styles.animate);
+        }, 70);
       }
     };
 
