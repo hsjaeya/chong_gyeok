@@ -1,4 +1,5 @@
 # 총격
+개발인원: 1인 개발
 
 ## Preview
 ![총기모션_45fps](https://github.com/user-attachments/assets/12af7c0b-869f-4d2d-9d17-afd6ab95c1ce)
@@ -15,6 +16,7 @@
 - 발사 반동으로 총기 기울임 효과
 
 ## Getting Started
-"s" 키를 누르시오.
+"s" 키를 누르시오
 
+## About
 Please do not copy this project directly. Feel free to get inspiration, but build your own version.
