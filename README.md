@@ -1,4 +1,4 @@
-# 총격
+# 총격(Gun Shooting)
 개발인원: 1인 개발
 
 ## Preview
